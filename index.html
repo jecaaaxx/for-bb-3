@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💌 Love Message for You 💌</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0B3D91; /* Navy blue background */
+      color: #FFFFFF; /* White text */
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #AAD8FF; /* Lighter blue for title */
+      font-size: 2.5em;
+    }
+
+    #message {
+      font-size: 1.5em;
+      margin: 40px 0;
+      padding: 20px;
+      border: 2px solid #AAD8FF;
+      border-radius: 20px;
+      background-color: #0D1B2A; /* Darker navy box */
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      background-color: #AAD8FF;
+      color: #0B3D91;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #7FB3FF;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #C1DFF0;
+    }
+  </style>
+</head>
+<body>
+  <h1>💌 A Special Love Message for You 💌</h1>
+  <div id="message">Click the button to see a surprise message! 💙</div>
+  <button onclick="generateMessage()">Show Me 💖</button>
+
+  <footer>Made with ❤️ just for you</footer>
+
+  <script>
+    const messages = [
+      "Every moment with you is my favorite 💕",
+      "You make my heart smile every day 😍",
+      "I love you more than all the stars in the sky ✨",
+      "Being with you feels like home 🏡💖",
+      "You’re my favorite hello and my hardest goodbye 💌",
+      "Every day with you is my new best day 🌸",
+      "I love you to the moon and back 🌙💙",
+      "You make my world brighter just by being in it ☀️💙",
+      "I’m so lucky to call you mine 🍀❤️",
+      "You’re my happy place and my safe space 💙"
+    ];
+
+    function generateMessage() {
+      const randomIndex = Math.floor(Math.random() * messages.length);
+      document.getElementById('message').textContent = messages[randomIndex];
+    }
+  </script>
+</body>
+</html>
